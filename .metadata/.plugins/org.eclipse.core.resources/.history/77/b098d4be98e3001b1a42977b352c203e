@@ -1,0 +1,9 @@
+package ab;
+enum Level{
+	High, Low , Medium;
+}
+
+public class Enum_Example {
+Level lev = Level.Medium;
+System.out.println(lev);
+}

@@ -1,0 +1,22 @@
+package DAA2;
+
+public class TowersOfHanoi {
+	static void towerOfHanoi(int n, char x, char y, char z) 
+    { 
+        if (n == 1) 
+        { 
+            System.out.println("Move disk 1 from rod " + x + " to rod " +y); 
+            return; 
+        } 
+        towerOfHanoi(n-1, x, z, y); 
+        System.out.println("Move disk " + n + " from rod " + x+ " to rod " + y); 
+        towerOfHanoi(n-1, z, y, x); 
+    }
+	public static void main(String args[]) 
+    { 
+        int n = 4; // Number of disks 
+        towerOfHanoi(n, 'a','b','c');  // A, B and C are names of rods 
+    } 
+} 
+
+

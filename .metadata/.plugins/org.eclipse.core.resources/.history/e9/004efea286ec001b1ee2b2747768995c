@@ -1,0 +1,72 @@
+package Linkedlist;
+
+import java.util.*;
+
+class Node{
+	int data;
+	Node next;
+}
+
+public class Sort_Linkedlist {
+	static Node head = null;
+	static Scanner sc = new Scanner(System.in);
+	
+	void Add() {
+		Node newNode = new Node();
+		System.out.println("Enter data");
+		newNode.data = sc.nextInt();
+		newNode.next = null;
+		if(head == null) {
+			head  = newNode;
+		}
+		else {
+			Node prev = null;
+			Node List = head;
+			while((List!=null) || (List.data<newNode.data)) {
+					prev = List;
+					List = List.next;	
+			}
+			if(List == null) {
+				prev.next = newNode;
+				
+			}
+			else if(prev == null) {
+				head = newNode;
+				newNode.next = List;
+			}
+			else {
+				prev.next = newNode;
+				newNode.next = List;
+				
+			}
+			
+		}
+		
+	
+	}
+	void Display() {
+		if(head == null)
+			System.out.println("Invalid");
+		else {
+			Node List = head;
+			System.out.println("Data : ");
+			while(List!=null) {
+				System.out.println(""+ List.data +"");
+				List = List.next;
+			}
+		}
+	}
+
+	void Delete() {
+		
+	}
+	public static void main(String[]args) {
+		Sort_Linkedlist sl = new Sort_Linkedlist();
+		for(int i = 0;i <10; i++) {
+		sl.Add();
+		sl.Display();
+		}
+		
+	}
+
+}

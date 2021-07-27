@@ -1,0 +1,27 @@
+package Reverse_ll;
+import java.util.*;
+class Node{
+	int data;
+	Node next;
+	public Node(int data) {
+		this.data = data;
+	}
+}
+public class Reverse_Linkedlist {
+	static Node head = null;
+	static Scanner sc = new Scanner(System.in);
+	void reverse() {
+		int count = 1;
+		Node prev = null;
+		Node List = head;
+		while(List!=null) {
+			List = List.next;
+			count++;
+		}
+		System.out.print(count);
+	}
+	public static void main(String[]args) {
+		Reverse_Linkedlist rl = new Reverse_Linkedlist();
+		rl.reverse();
+	}
+}

@@ -1,0 +1,31 @@
+package ab;
+
+import java.util.*;
+
+public class Check_sum_of_2_primes {
+	static boolean check(int n) {
+		int number = n;
+		int x = 0;
+		int y = 0;
+		for(int i = 1; i<=number ; i++) {
+			if( x%i != 0 && y%i == 0 && number==x+y) {
+				System.out.println(number + "=" + x + "+" + y);
+			}
+			x++;
+			y++;
+			
+		}
+		return true;
+	}
+		
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+		System.out.println(check(n));
+		
+		
+		}
+		
+	}
+
+

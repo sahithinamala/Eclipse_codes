@@ -1,0 +1,48 @@
+package ab;
+
+import java.util.Scanner;
+
+public class Pranav_min_swap {
+	
+	static int minSwap(int arr[], int n, int k) {
+		  
+		 int cnt = 0;
+		   for (int i = 0; i < n; ++i) {
+		      if (arr[i] <= k) {
+		         ++cnt;
+		      }
+		   }
+		   int outOfRange = 0;
+		   for (int i = 0; i < cnt; ++i) {
+		      if (arr[i] > k) {
+		         ++outOfRange;
+		      }
+		   }
+		   int result = outOfRange;
+		   for (int i = 0, j = cnt; j < n; ++i, ++j) {
+		      if (arr[i] > k) {
+		         --outOfRange;
+		      }
+		      if (arr[j] > k) {
+		         ++outOfRange;
+		      }
+		      result =Math.min(result, outOfRange);
+		   }
+		   return result;
+		}
+	  
+	// Driver code
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+	    int arr[] = new int[n];
+	    for(int i = 0;i <n;i++) {
+	    	arr[i] = sc.nextInt();
+	    }
+	    
+	    int k = sc.nextInt();
+	    System.out.println(minSwap(arr, n, k));
+	  
+	}
+	}

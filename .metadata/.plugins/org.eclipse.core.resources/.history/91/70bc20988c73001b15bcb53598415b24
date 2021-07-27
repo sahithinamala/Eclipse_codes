@@ -1,0 +1,21 @@
+package CN4;
+import java.io.DataOutputStream;
+import java.net.*;
+public class Client {
+	public static void main(String[]args) {
+		try {
+			Socket socket = new Socket("Localhost",8080);
+			DataOutputStream dataOUT = new DataOutputStream(socket.getOutputStream());
+			dataOUT.writeUTF("Welcome Server! Greetings from Client");
+			dataOUT.flush();
+			dataOUT.close();
+			socket.close();
+			
+		}
+		catch(Exception e) {
+			System.out.println(e);
+			
+		}
+	}
+
+}

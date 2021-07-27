@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="java.awt.image.BufferedImage"/>
+    <fullyQualifiedTypeName name="javax.imageio.ImageIO"/>
+    <fullyQualifiedTypeName name="java.awt.TextField"/>
+    <fullyQualifiedTypeName name="java.awt.Font"/>
+    <fullyQualifiedTypeName name="java.awt.FontMetrics"/>
+    <fullyQualifiedTypeName name="java.awt.Button"/>
+    <fullyQualifiedTypeName name="java.awt.event.WindowListener"/>
+    <fullyQualifiedTypeName name="javax.swing.JButton"/>
+    <fullyQualifiedTypeName name="javax.swing.JPasswordField"/>
+    <fullyQualifiedTypeName name="java.awt.Color"/>
+    <fullyQualifiedTypeName name="javax.swing.JPanel"/>
+    <fullyQualifiedTypeName name="java.io.DataInputStream"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextField"/>
+    <fullyQualifiedTypeName name="javax.swing.JTextArea"/>
+    <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
+    <fullyQualifiedTypeName name="javax.swing.JScrollPane"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.net.Socket"/>
+    <fullyQualifiedTypeName name="java.util.Vector"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.TimeUnit"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="java.util.Calendar"/>
+    <fullyQualifiedTypeName name="com.sun.tools.javac.util.List"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="Chat_Server.Server"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.ExecutorService"/>
+    <fullyQualifiedTypeName name="java.util.concurrent.Executors"/>
+    <fullyQualifiedTypeName name="java.net.InetSocketAddress"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+</qualifiedTypeNameHistroy>

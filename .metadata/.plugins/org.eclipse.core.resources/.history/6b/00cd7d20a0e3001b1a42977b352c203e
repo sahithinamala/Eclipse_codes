@@ -1,0 +1,31 @@
+package ab;
+import java.util.*;
+
+public class GCD_18 {
+	
+	void gcd(int n, int m) {
+		int fn = n;
+		int ln = m;
+		if(fn == 0) {
+			System.out.println(ln);
+		}
+		else if(ln == 0) {
+			System.out.println(fn);
+		}
+		else if(ln>fn) {
+			gcd(fn,ln-fn);
+			
+		}
+		else {
+			gcd(fn-ln,ln);
+		}
+	}
+	public static void main(String[]args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the 2 numbers for finding GCD");
+		int n = sc.nextInt();
+		int m = sc.nextInt();
+		
+	}
+
+}

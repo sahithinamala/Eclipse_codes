@@ -1,0 +1,21 @@
+package CN4;
+import java.io.DataInputStream;
+import java.net.*;
+public class Server {
+	public static void main(String[]args) {
+		try {
+		ServerSocket ssocket = new ServerSocket(6666);
+		Socket socket = ssocket.accept();
+		DataInputStream dataIS = new DataInputStream(socket.getInputStream());
+		String string = (String)dataIS.readUTF();
+		System.out.println("message= "+string);
+		ssocket.close();
+		
+		
+	}
+		catch(Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}

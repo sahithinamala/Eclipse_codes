@@ -1,0 +1,27 @@
+package practice;
+
+import java.util.Scanner;
+
+
+public class Decimal2binary
+{
+    void dectobin(int n){
+        int bin[] = new int[1000000000];
+        for(int i = 0; i < n; i++) {
+        	bin[i] = n%2;
+        	n = n/2;
+        	
+        }
+       System.out.println(n);
+        
+    }
+    public static void main(String[]args)
+    {
+        
+        Scanner sc =  new Scanner(System.in);
+        System.out.println("Enter the number to be converted: ");
+        int n = sc.nextInt();
+        void dectobin(n);
+    }
+    
+}

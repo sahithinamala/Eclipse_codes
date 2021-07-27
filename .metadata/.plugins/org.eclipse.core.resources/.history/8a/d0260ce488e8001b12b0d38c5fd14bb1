@@ -1,0 +1,63 @@
+package ab;
+
+import java.util.Scanner;
+
+public class Pranav_min_swap {
+	static void minswap(int n, int arr[],int k) {
+		int count  = 0;
+		for(int j = 0;j<n;j++) {
+		if(n<1&& n>Math.pow(10, 5)) {
+			System.out.println("Constraints are not followed");
+		}
+		else if(arr[j]>1048 && arr[j]<-1048) {
+			System.out.println("Constraints are not followed");
+			
+		}
+		else if(k<-1048 && k>1048) {
+			System.out.println("Constraints are not followed");
+		}
+		else {
+			for (int i = 0; i < n; ++i) {
+			    if (arr[i] <= k)
+			        ++count;
+			}
+			int unwanted = 0;
+			for(int i=0;i<n;++i) 
+				if (arr[i] > k)
+			        ++unwanted;
+			int ans = unwanted;
+			for (int i = 0, l = count; l < n; ++i, ++l) {
+				  
+			    // Decrement count of previous window
+			    if (arr[i] > k)
+			        --unwanted;
+			  
+			    // Increment count of current window
+			    if (arr[l] > k)
+			        ++unwanted;
+			  
+			 
+			    ans = Math.min(ans, unwanted);
+			    }
+			System.out.println(ans);
+			}
+		 
+		}
+		
+	}
+	
+
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+		int n = sc.nextInt();
+	    int arr[] = new int[n];
+	    for(int i = 0;i <n;i++) {
+	    	arr[i] = sc.nextInt();
+	    }
+	    
+	    int k = sc.nextInt();
+	   minswap(n,arr,k);
+	  
+	}
+	}
